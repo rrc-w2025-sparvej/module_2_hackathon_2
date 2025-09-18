@@ -4,67 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Sweet Tooth Bakery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div>
-            <h1>The Sweet Tooth Bakery</h1>
-        </div>
+        <h1>The Sweet Tooth Bakery</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="home">
-        <h2>Freshly Baked Everyday</h2>
-        <p>Delicious breads, cakes, and pastries made with love and loads of sugar.</p>
 
-    </section>
-
-    <section id="menu">
-        <h2>Our Menu</h2>
-        <div>
-            <div>
-                <img src="images/breads.jpg" alt="Artisan Bread">
-                <h3>Artisan Bread</h3>
-                <p>Freshly Baked every morning</p>
-            </div>
-        <div>
-            <img src="images/chcolatecake.jpeg alt=" alt="Chocolate Cake">
-            <h3>Chocolate Cake</h3>
-            <p>Rich, creamy, and decadent.</p>
-        </div>
-        <div>
-            <img src="images/pastry.jpg" alt="Delicious Pastries">
-            <h3>Delicious Pastries</h3>
-            <p>Perfect for your coffee break.</p>
-        </div>
-        </div>
-    </section>
-
-    <section id="about">
-
-        <h2>About Us</h2>
-
-        <p>
-            Sweet Treats Bakery has been serving the community with fresh baked goods since 2005. 
-            Our passion is creating delightful treats that bring joy to every bite.
-        </p>
+    <main>
+        <section id="home">
+            <h2>Freshly Baked Everyday</h2>
+            <p>Delicious breads, cakes, and pastries made with love and loads of sugar. Come and experience our freshly baked treats daily!</p>
         </section>
 
-        <footer id="contact">
+        <h2>Our Menu</h2>
+        <section id="menu">
+            
+            <article class="menu-item">
+                <img src="images/breads.jpg" alt="Artisan Bread">
+                <h3>Artisan Bread</h3>
+                <p>Freshly baked every morning using traditional recipes.</p>
+            </article>
+            <article class="menu-item">
+                <img src="images/chcolatecake.jpeg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich, creamy, and decadent chocolate layers for every occasion.</p>
+            </article>
+            <article class="menu-item">
+                <img src="images/pastry.jpg" alt="Delicious Pastries">
+                <h3>Delicious Pastries</h3>
+                <p>Perfect for your coffee break or afternoon snack.</p>
+            </article>
+            <article class="menu-item">
+                <img src="images/croissant.jpg" alt="Butter Croissant">
+                <h3>Butter Croissant</h3>
+                <p>Flaky, buttery, and golden brown — a French classic.</p>
+            </article>
+            <article class="menu-item">
+                <img src="images/muffins.jpg" alt="Blueberry Muffins">
+                <h3>Blueberry Muffins</h3>
+                <p>Soft and sweet muffins loaded with fresh blueberries.</p>
+            </article>
+            <article class="menu-item">
+                <img src="images/coffee.jpg" alt="Fresh Coffee">
+                <h3>Coffee & Beverages</h3>
+                <p>Freshly brewed coffee, teas, and specialty drinks to pair with your treats.</p>
+            </article>
+        </section>
 
-            <p>123 Main Street, Sweet Town</p>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                Sweet Treats Bakery has been serving the community with fresh baked goods since 2005. 
+                Our passion is creating delightful treats that bring joy to every bite.
+                We believe in quality ingredients, friendly service, and making every customer feel at home.
+            </p>
+        </section>
 
-            <p>Call us: (555) 123-4567</p>
-            <p>&copy; 2025 Sweet Treats Bakery</p>
-        </footer>
+        <section id="testimonials">
+            <h2>Customer Testimonials</h2>
+            <blockquote>"Best bakery in town! The chocolate cake is heavenly." – Sarah T.</blockquote>
+            <blockquote>"I come here every weekend for the fresh croissants and pastries." – James L.</blockquote>
+            <blockquote>"Friendly staff and amazing treats. Highly recommend!" – Priya S.</blockquote>
+        </section>
+
+        <section class="gallery-section">
+        <h2 class="gallery-header">Gallery</h2>
+        </section>
+            <section id="gallery">
+                
+                <figure>
+                    <img src="images/gallery1.jpg" alt="Bakery interior">
+                </figure>
+                <figure>
+                    <img src="images/gallery2.jpg" alt="Assorted pastries">
+                </figure>
+                <figure>
+                    <img src="images/gallery3.jpg" alt="Chocolate desserts">
+                </figure>
+                <figure>
+                    <img src="images/gallery4.jpg" alt="Coffee and treats">
+                </figure>
+            </section>
+        
+    </main>
+
+    <footer id="contact">
+        <address>123 Main Street, Sweet Town</address>
+        <p>Call us: (555) 123-4567</p>
+        <p>Email: <a href="mailto:info@sweettoothbakery.com">info@sweettoothbakery.com</a></p>
+        <p>&copy; 2025 Sweet Treats Bakery</p>
+    </footer>
 </body>
 </html>
-
-  
-

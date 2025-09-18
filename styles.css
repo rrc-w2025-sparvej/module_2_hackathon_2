@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FCFCFC;
+    color: #30292F;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 3.75rem;
+    background-color: #FCFCFC;
+    border-bottom: 0.125rem solid #5D737E;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #02111B;
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.875rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #30292F;
+    font-weight: 600;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 0.3125rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #5D737E;
+    color: #FCFCFC;
+}
+
+main section {
+    padding: 3.75rem 2.5%;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25rem;
+    color: #02111B;
+    margin-bottom: 1.25rem;
+}
+
+#home p {
+    font-size: 1.125rem;
+    max-width: 37.5rem;
+    color: #3F4045;
+}
+
+#menu h2, #about h2, #testimonials h2, #gallery h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #02111B;
+    margin-bottom: 3rem;
+}
+
+.menu-item {
+    background-color: #FCFCFC;
+    border-radius: 0.9375rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+}
+
+.menu-item:hover {
+    transform: translateY(-0.625rem);
+    box-shadow: 0 0.9375rem 2.1875rem rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    max-width: 20rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.menu-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: #02111B;
+    margin-bottom: 0.625rem;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #3F4045;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2.5rem;
+    justify-items: center;
+}
+
+#about {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#about p {
+    max-width: 43.75rem;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    color: #3F4045;
+}
+
+#testimonials blockquote {
+    font-size: 1rem;
+    font-style: italic;
+    color: #30292F;
+    margin: 1.25rem auto;
+    max-width: 37.5rem;
+    padding-left: 1rem;
+    border-left: 0.3125rem solid #5D737E;
+}
+
+
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.25rem;
+    justify-items: center;
+}
+
+#gallery figure {
+    width: 100%;
+    max-width: 20rem;
+    overflow: hidden;
+    border-radius: 0.625rem;
+}
+
+#gallery img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    display: block;
+}
+
+footer {
+    background-color: #02111B;
+    color: #FCFCFC;
+    text-align: center;
+    padding: 2.5rem 2%;
+    font-size: 0.875rem;
+}
+
+footer a {
+    color: #FCFCFC;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    #menu {
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    }
+
+    #gallery {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #home h2 {
+        font-size: 1.75rem;
+    }
+
+    #menu h2, #about h2, #testimonials h2, #gallery h2 {
+        font-size: 1.5rem;
+    }
+
+    .menu-item img, #gallery img {
+        height: 10rem;
+    }
+}
