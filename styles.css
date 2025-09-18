@@ -1,3 +1,44 @@
+header h1::before,
+header h1::after {
+    content:"✦";
+    color: #e76f51;
+    margin: 0rem;
+}
+
+header h1 {
+    text-shadow: 1px 1px 1px #c50;
+}
+
+
+a:hover {
+    text-decoration: underline;
+    color: #f4a261;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul li a::before {
+  content: "• ";
+  color: #f4a261;
+}
+
+h2::after {
+    content: "";
+    background: #f4a261;
+}
+
+h2::before {
+    content: "★";
+    color: #f4a261;
+}
+
+h3::before {
+    content: "♡";
+    color: #f4a261;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -75,12 +116,18 @@ main section {
     color: #3F4045;
 }
 
+#menu h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 #menu h2, #about h2, #testimonials h2, #gallery h2 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     color: #02111B;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .menu-item {
